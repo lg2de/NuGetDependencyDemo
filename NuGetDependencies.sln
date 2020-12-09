@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependentLibrary", "Depende
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleWithAssemblyReference", "ConsoleWithAssemblyReference\ConsoleWithAssemblyReference.csproj", "{959CBBC5-E723-461D-82CB-1AEED7D8BBFF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleWithNugetReference", "ConsoleWithNugetReference\ConsoleWithNugetReference.csproj", "{4C456160-7CE8-4F61-9CE6-208FF7703168}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{959CBBC5-E723-461D-82CB-1AEED7D8BBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{959CBBC5-E723-461D-82CB-1AEED7D8BBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{959CBBC5-E723-461D-82CB-1AEED7D8BBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C456160-7CE8-4F61-9CE6-208FF7703168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C456160-7CE8-4F61-9CE6-208FF7703168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C456160-7CE8-4F61-9CE6-208FF7703168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C456160-7CE8-4F61-9CE6-208FF7703168}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
