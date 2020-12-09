@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -10,6 +10,20 @@
     <Reference Include="BaseLibrary">
       <HintPath>..\BaseLibrary\bin\Debug\netcoreapp3.1\BaseLibrary.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- bind targets file into referencing project to copy package content into output folder -->
+    <None Include="DependentLibrary.targets">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
+    <None Remove="bin\Debug\netcoreapp3.1\BaseLibrary.dll" />
+    <!-- collect files to be packaged -->
+    <None Include="bin\$(Configuration)\$(TargetFramework)\BaseLibrary.dll" Visible="false">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
