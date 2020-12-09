@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BaseLibrary">
+      <HintPath>..\BaseLibrary\bin\Debug\netcoreapp3.1\BaseLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
